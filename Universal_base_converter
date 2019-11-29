@@ -1,0 +1,41 @@
+def space():
+    print("\n"*40)
+
+a=0
+while a!='q':
+    print("==============================================")
+    a=input("(1) Decimal \n(2) Binary \n(3) Hexadecimal \n")
+    space()
+    if a=="1":
+        s=input("Enter a decimal number: ")
+        try:
+            s=int(s)
+            print("\nBinary:",bin(s))
+            print("\nHexadecimal:",hex(s))
+        except:
+            print()
+
+    elif a=="2":
+        s=input("Enter a binary number: ")
+        try:
+            i=int(s,2)
+        
+            print("decimal:",i)
+
+            print("hexadecimal:",hex(i))
+        except:
+            print()
+        
+        
+    elif a=='3':
+        s=input("Enter a hexadecimal number: ")
+        try:
+            i=int(s,16)
+
+            print("decimal:",i)
+
+            print("binary:",bin(i))
+        except:
+            print()
+    else:
+        print()
