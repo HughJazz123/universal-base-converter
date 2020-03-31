@@ -2,9 +2,6 @@
 #RGB values -> Hexadecimal
 #Decimal - Hexadecimal - Binary
 
-
-
-
 def hexcolor(r,g,b):
     hex_codes=[]
     r=hex(r)
