@@ -1,4 +1,4 @@
-from modules import converter
+import converter
 
 user_input=input("(1) Decimal\n(2) Binary\n(3) Hexadecimal\n(q) quit\n")
 
