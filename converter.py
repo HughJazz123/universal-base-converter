@@ -1,24 +1,5 @@
 #This modules converts
-#RGB values -> Hexadecimal
 #Decimal - Hexadecimal - Binary
-
-def hexcolor(r,g,b):
-    hex_codes=[]
-    r=hex(r)
-    g=hex(g)
-    b=hex(b)
-    
-    hex_codes.append(r)
-    hex_codes.append(g)
-    hex_codes.append(b)    
-    hex_codes=[l.replace('0x','') for l in hex_codes]
-    for i in range(len(hex_codes)):
-        if len(hex_codes[i])==1:
-            hex_codes[i]='0'+hex_codes[i]
-        
-    hex_color=''.join(hex_codes)
-    hex_color='#'+hex_color
-    return hex_color
 
 class decimal:
     def binary(decimal_number):
